@@ -57,7 +57,7 @@
 | `examples/agent-run-workspace/app.js` | 4891 | `64c71fefb114d59610dcdefb0bc1c1b48ab305fc50539de473cc976649b758eb` |
 | `examples/agent-run-workspace/index.html` | 12689 | `aaef593cb035507004d65947661dbd642563f3cb4d50b51e4de2325e043c563f` |
 | `examples/agent-run-workspace/README.md` | 1125 | `1238d11f8a4d8a264dd72da4faacfdb88e90bc1aa423f7ab69bea0ac175aec6d` |
-| `examples/agent-run-workspace/styles.css` | 14842 | `0f7a663b3df6db262eb7a30403f1c940ad98c30ce4e1b78c38abcb627f561bd6` |
+| `examples/agent-run-workspace/styles.css` | 15517 | `8b31eca5357e2bfc1e74219726fa9bd73d1ca9ad54fca8ac06762c65eae32114` |
 | `examples/README.md` | 674 | `d129dc40c0d26d723355d6e979da4481f9265ce509206f8cb8327865df3e1792` |
 | `figma/COMMUNITY_KIT.md` | 2777 | `42a3254a4fc28e9f9056e0d7b2ad8c3c28a661aefaba515c6749191adbe06368` |
 | `figma/community-kit.manifest.json` | 534 | `6e33820ca27447dce1fe06f7c7154190a872d7260c69e5da2cac08ee20f1a3c0` |
