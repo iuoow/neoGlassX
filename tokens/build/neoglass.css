@@ -4,6 +4,8 @@
 :root, [data-theme="dark"] {
   --ng-button-primary-background: rgb(0 217 104);
   --ng-button-primary-height: 36px;
+  --ng-color-action-danger: rgb(255 98 98);
+  --ng-color-action-on-danger: rgb(5 7 6);
   --ng-color-action-on-primary: rgb(5 7 6);
   --ng-color-action-primary: rgb(0 217 104);
   --ng-color-blue-500: rgb(126 165 255);
@@ -75,6 +77,8 @@
 }
 
 [data-theme="high-contrast"] {
+  --ng-color-action-danger: rgb(255 92 92);
+  --ng-color-action-on-danger: rgb(0 0 0);
   --ng-color-action-on-primary: rgb(0 0 0);
   --ng-color-action-primary: rgb(133 255 173);
   --ng-color-border-strong: rgb(255 255 255);

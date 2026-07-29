@@ -57,7 +57,7 @@
 | `examples/agent-run-workspace/app.js` | 4891 | `64c71fefb114d59610dcdefb0bc1c1b48ab305fc50539de473cc976649b758eb` |
 | `examples/agent-run-workspace/index.html` | 12689 | `aaef593cb035507004d65947661dbd642563f3cb4d50b51e4de2325e043c563f` |
 | `examples/agent-run-workspace/README.md` | 1125 | `1238d11f8a4d8a264dd72da4faacfdb88e90bc1aa423f7ab69bea0ac175aec6d` |
-| `examples/agent-run-workspace/styles.css` | 14459 | `1ef30ce78fe1de2f6546d46b197466927cb4cd837280df85c5f499b7530ec588` |
+| `examples/agent-run-workspace/styles.css` | 14842 | `0f7a663b3df6db262eb7a30403f1c940ad98c30ce4e1b78c38abcb627f561bd6` |
 | `examples/README.md` | 674 | `d129dc40c0d26d723355d6e979da4481f9265ce509206f8cb8327865df3e1792` |
 | `figma/COMMUNITY_KIT.md` | 2777 | `42a3254a4fc28e9f9056e0d7b2ad8c3c28a661aefaba515c6749191adbe06368` |
 | `figma/community-kit.manifest.json` | 534 | `6e33820ca27447dce1fe06f7c7154190a872d7260c69e5da2cac08ee20f1a3c0` |
@@ -82,7 +82,7 @@
 | `scripts/Update-Manifest.ps1` | 1266 | `cc630ad7c97d91776d52a94b5d081969fc4fc864749e9bf715e155f083e7ba0b` |
 | `SECURITY.md` | 2269 | `a58504141b91c28940c7815ef6571fe20cd54168c291f5ff75d4cfd67e9624b5` |
 | `SUPPORT.md` | 872 | `43e435d141224c11ffbc5a0a10efbf795418f55a45be4f91db656848d5e0cd95` |
-| `tokens/build/neoglass.css` | 3861 | `f195e128dec39eea990c2a94a3314c43826fef1dc76142d27c26d50f585d24db` |
+| `tokens/build/neoglass.css` | 4039 | `3591504e842c811c66093d3fdd07ab1fd5661e73a935ea210ce71f47e6fc64f5` |
 | `tokens/build/README.md` | 474 | `e8b6a60f35eeb7ef0b7cb450e44588bc81a808aba90a4b4a88d4c7440f5132f8` |
 | `tokens/component/button.json` | 249 | `1bfe148b9f73c74a4cd74535da971e090efb3e191a6d67e61e01f1f6d9712b45` |
 | `tokens/neoglass.example.tokens.json` | 2445 | `0e7907489d1c517fe5bcdeb4eed901aa4785e9603993b8ccc9cc3da0eb6c2b69` |
@@ -93,9 +93,9 @@
 | `tokens/profiles/agent-workbench.json` | 329 | `c579bc0db8ccc63b8b67fac7365073cc0f3bec4eff93fe8dd7a68aa3826da014` |
 | `tokens/README.md` | 2237 | `af8596d7bdd4d8be044b1b1e3edf2817e7d175dedad9f18454ad0a3138d313ae` |
 | `tokens/schema/neoglass.tokens.schema.json` | 790 | `bb5200e21dd679e5705fdb3f6783bc791cea80f83f8fc5317f7e6789b4b3c35d` |
-| `tokens/semantic/color.json` | 1172 | `ee0d43c02c8bab289918363d6e7a0bdbc3712b277c1f78bd0815c0d48688c412` |
+| `tokens/semantic/color.json` | 1263 | `0406083d8cf90f9c5a400b127c6cfc9c755bae7b79664d4937685cc61c17308a` |
 | `tokens/themes/dark.json` | 881 | `d0ce3cc2cceaf9bc971940f50964608270bd8300931ddba3640a12eed91d06ea` |
-| `tokens/themes/high-contrast.json` | 1495 | `1f85eef7f7e7fbb984b6bd1fc1b3d9f06a14f40433c39c2cfa725ac617a7e0c3` |
+| `tokens/themes/high-contrast.json` | 1690 | `43d27fbc42222b2b40cf42a055f69b171ef91fe9b09658f1aa5615ec7c2dca6e` |
 | `TRADEMARKS.md` | 1364 | `be27a4adc153f89c5a215ea8067a8f1255a030a7b77aec08e95b850c575985e0` |
 | `website/app.js` | 519 | `4840bf69fd7796f5c7354090be53559878bec0a7a4e34b82c5537805ee21d8d3` |
 | `website/index.html` | 4526 | `cb8103268077038c2a44eabd4d5ec9fd06accee9f5e16ddb24fe2395c924bfd0` |

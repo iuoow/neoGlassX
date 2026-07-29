@@ -9,7 +9,7 @@
     },
     "border": { "$type": "color", "subtle": { "$value": "{color.neutral.400}" }, "strong": { "$value": "{color.neutral.500}" } },
     "text": { "$type": "color", "primary": { "$value": "{color.neutral.1000}" }, "secondary": { "$value": "{color.neutral.900}" }, "tertiary": { "$value": "{color.neutral.800}" } },
-    "action": { "$type": "color", "primary": { "$value": "{color.green.500}" }, "on-primary": { "$value": "{color.neutral.0}" } },
+    "action": { "$type": "color", "primary": { "$value": "{color.green.500}" }, "on-primary": { "$value": "{color.neutral.0}" }, "danger": { "$value": "{color.red.500}" }, "on-danger": { "$value": "{color.neutral.0}" } },
     "status": { "$type": "color", "success": { "$value": "{color.teal.500}" }, "info": { "$value": "{color.blue.500}" }, "warning": { "$value": "{color.yellow.500}" }, "danger": { "$value": "{color.red.500}" } },
     "risk": { "$type": "color", "r0": { "$value": "{color.blue.500}" }, "r1": { "$value": "{color.teal.500}" }, "r2": { "$value": "{color.yellow.500}" }, "r3": { "$value": "{color.orange.500}" }, "r4": { "$value": "{color.red.500}" } }
   }
