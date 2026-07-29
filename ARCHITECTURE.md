@@ -43,17 +43,19 @@ Components consume semantic and component tokens only. Profiles map existing tok
 
 Risk is never a page-wide visual theme. A page may contain both an R0 read action and an R4 privileged action; each must retain its own permission, approval, evidence, and audit treatment.
 
-## Initial supported presets
+## Preset maturity
 
-| Preset | Theme / density | Experience | Required evidence |
+| Preset | Theme / density | Experience | Maturity | Evidence |
 |---|---|---|---|
-| Agent Workbench | Dark / Compact | Solid; limited subtle glass | Run timeline, Tool Call, Approval, Artifact |
-| Enterprise | Light or Dark / Compact | Solid | Data grid, permissions, workflow, audit |
-| Finance & Data | Dark / Compact | Solid | source, freshness, precision, reconciliation |
-| Operations | Dark / Compact | Solid | alert, incident, metrics/logs/traces, runbook |
-| Marketing & Launch | Light or Dark / Comfortable | Glass or Immersive | static fallback, reduced motion, CTA remains usable |
+| Agent Workbench | Dark / Compact | Solid; limited subtle glass | Supported preview | Run timeline, Tool Call, Approval, Artifact, generated CSS, structural accessibility checks |
+| Enterprise | Not yet mapped | Solid | Planned | Data grid, permissions, workflow, audit |
+| Finance & Data | Not yet mapped | Solid | Planned | source, freshness, precision, reconciliation |
+| Operations | Not yet mapped | Solid | Planned | alert, incident, metrics/logs/traces, runbook |
+| Marketing & Launch | Not yet mapped | Glass or Immersive | Planned | static fallback, reduced motion, CTA remains usable |
 
-Any combination not listed here is experimental until it has a Token mapping, a reference example, accessibility evidence, and visual-regression coverage.
+Only the Agent Workbench row is supported in the public preview. Every other
+combination is planned or experimental until it has a Token mapping, a
+reference example, accessibility evidence, and visual-regression coverage.
 
 ## Degradation order
 

@@ -170,7 +170,7 @@ NeoGlass X 不承诺所有维度都可以自由组合。为避免不可测试的
 - AI 权限与人工审批风险模型
 - 开源仓库基础文件
 - 初步许可证与治理建议
-- Dark / High Contrast Token 构建输出与浏览器变量
+- Dark / High Contrast Token 构建输出、浏览器变量与 Token 契约检查
 - Agent Run Workspace 可运行静态参考页
 - 无障碍测试样例与结构性检查脚本
 - 静态文档首页与英文核心入口

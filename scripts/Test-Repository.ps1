@@ -20,6 +20,7 @@ $required = @(
   'tokens/build/neoglass.css', 'tokens/schema/neoglass.tokens.schema.json',
   'examples/agent-run-workspace/index.html', 'examples/accessibility/index.html',
   'website/index.html', 'scripts/Test-Accessibility.ps1',
+  'scripts/Test-Tokens.ps1',
   'figma/COMMUNITY_KIT.md', 'figma/community-kit.manifest.json'
 )
 foreach ($relativePath in $required) {
@@ -49,6 +50,9 @@ foreach ($jsonFile in $allFiles | Where-Object { $_.Extension -eq '.json' }) {
 
 & (Join-Path $repoRoot 'scripts\Build-Tokens.ps1') -Check
 if ($LASTEXITCODE -ne 0) { Add-Error 'Token build output is stale or failed to validate.' }
+
+& (Join-Path $repoRoot 'scripts\Test-Tokens.ps1')
+if ($LASTEXITCODE -ne 0) { Add-Error 'Token contract checks failed.' }
 
 & (Join-Path $repoRoot 'scripts\Test-Accessibility.ps1')
 if ($LASTEXITCODE -ne 0) { Add-Error 'Accessibility structural checks failed.' }
