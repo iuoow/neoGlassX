@@ -1,8 +1,9 @@
 # Documentation Website
 
-该目录预留给文档网站。
+[`index.html`](./index.html) 是可直接打开的静态文档首页。它不依赖构建工具，使用
+生成的 NeoGlass Token CSS，并提供主题与动效偏好切换。
 
-最低要求：
+继续演进时保持以下要求：
 
 - 版本化文档
 - 中文和英文切换

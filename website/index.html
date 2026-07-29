@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark" data-motion="productive" data-transparency="reduced">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NeoGlass X documentation and reference implementation entry point">
+    <title>NeoGlass X · Documentation Preview</title>
+    <link rel="stylesheet" href="../tokens/build/neoglass.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="NeoGlass X 文档首页"><span aria-hidden="true">N</span> NeoGlass <b>X</b></a>
+      <nav aria-label="站点导航"><a href="#start">开始</a><a href="#profiles">Profiles</a><a href="#delivery">交付物</a></nav>
+      <div class="preferences" aria-label="显示偏好">
+        <label>主题 <select id="theme-select"><option value="dark">暗色</option><option value="high-contrast">高对比</option></select></label>
+        <label>动效 <select id="motion-select"><option value="productive">必要</option><option value="none">关闭</option></select></label>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">ARCHITECTURE PREVIEW · 0.2.0-ALPHA.1</p>
+        <h1 id="hero-title">面向可信 Agent 执行体验的开放设计系统</h1>
+        <p>NeoGlass X 将 Goal、Plan、Tool Call、Approval、Evidence、Artifact 和 Audit 组织为可审计的产品体验，而不是将关键状态隐藏在聊天结果中。</p>
+        <div class="hero-actions"><a class="button primary" href="../examples/agent-run-workspace/index.html">打开 Agent Run 示例</a><a class="button" href="../README.md">阅读项目说明</a></div>
+      </section>
+      <section id="start" class="section" aria-labelledby="start-title">
+        <p class="eyebrow">START HERE</p>
+        <h2 id="start-title">从共享核心到受支持预设</h2>
+        <div class="cards">
+          <article><h3>Architecture</h3><p>用户偏好、体验等级、产品 Profile 与行动风险语义相互独立。</p><a href="../ARCHITECTURE.md">查看体系架构</a></article>
+          <article><h3>Tokens</h3><p>JSON Token 可复现地生成浏览器变量，并包含 Dark 与 High Contrast 主题。</p><a href="../tokens/README.md">查看 Token 说明</a></article>
+          <article><h3>Accessibility</h3><p>页面和组件以键盘、语义、对比度、动效与审批信息完整性为基线。</p><a href="../examples/accessibility/index.html">打开无障碍样例</a></article>
+        </div>
+      </section>
+      <section id="profiles" class="section" aria-labelledby="profile-title">
+        <p class="eyebrow">PRODUCT PROFILES</p>
+        <h2 id="profile-title">共享原则，不把所有场景混成一个界面</h2>
+        <div class="profile-grid">
+          <article><strong>Agent Workbench</strong><span>执行过程、审批、证据与产物优先。</span></article>
+          <article><strong>Enterprise</strong><span>高密度流程、权限、表格与审计。</span></article>
+          <article><strong>Finance &amp; Data</strong><span>数据来源、时效、精度与可解释性。</span></article>
+          <article><strong>Operations</strong><span>告警、事件、可观测性与 Runbook。</span></article>
+          <article><strong>Marketing &amp; Launch</strong><span>品牌表达与渐进增强，和生产界面分层。</span></article>
+        </div>
+      </section>
+      <section id="delivery" class="section delivery" aria-labelledby="delivery-title">
+        <p class="eyebrow">SHIPPED IN THIS PREVIEW</p>
+        <h2 id="delivery-title">可检验的公开交付物</h2>
+        <ul>
+          <li>中文规范与英文核心入口</li>
+          <li>可构建、可校验的 Token CSS 输出</li>
+          <li>Agent Run Workspace 静态参考实现</li>
+          <li>Figma Community Kit 蓝图与变量映射</li>
+          <li>结构性无障碍检查与手动审查清单</li>
+        </ul>
+        <p class="note">此预览不提供稳定组件包、包管理器发布物或完整 Figma `.fig` 文件。</p>
+      </section>
+    </main>
+    <footer><span>NeoGlass X · Experimental / Specification-first</span><a href="https://github.com/iuoow/neoGlassX">GitHub</a></footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

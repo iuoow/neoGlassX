@@ -5,6 +5,7 @@
 已提供：
 
 - [Agent Run Workspace](./agent-run-workspace/)：可信 Agent 执行、R3 审批、Tool Call 证据和 Artifact Workspace 的静态参考实现。
+- [Accessibility fixture](./accessibility/)：高对比、关闭动效、状态文本与审批上下文的手动测试样例。
 
 计划示例：
 

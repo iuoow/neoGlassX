@@ -170,22 +170,24 @@ NeoGlass X 不承诺所有维度都可以自由组合。为避免不可测试的
 - AI 权限与人工审批风险模型
 - 开源仓库基础文件
 - 初步许可证与治理建议
+- Dark / High Contrast Token 构建输出与浏览器变量
+- Agent Run Workspace 可运行静态参考页
+- 无障碍测试样例与结构性检查脚本
+- 静态文档首页与英文核心入口
+- Figma Community Kit 蓝图、Variables 映射与发布清单
 
 ### 正在建设
 
-- 英文文档
-- Token 构建输出与浏览器变量
-- Figma Community Kit
-- 可运行参考页面
-- 无障碍测试样例
-- 文档网站
+- 完整英文规范翻译
+- 可编辑、可发布的 Figma `.fig` Community 文件
+- 文档网站的全文搜索、版本化与双语导航
+- 更多 Product Profile 的参考实现与辅助技术实测
 
 ### 尚未提供
 
 - 稳定的前端组件包
 - npm、PyPI 或其他包管理器发布物
 - 完整 Figma 文件
-- 正式商标授权
 - SLA 或商业支持承诺
 
 ---

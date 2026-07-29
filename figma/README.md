@@ -1,8 +1,16 @@
 # Figma
 
-该目录用于记录 Figma Community Kit、Libraries、Variables 和组件发布策略。
+该目录包含 Figma Community Kit 的可交付蓝图、Variables 映射和发布清单。
+它不是可导入的 `.fig` 二进制文件；完整 Figma 文件仍需在 Figma 中由维护者
+创建、审阅并发布。
 
-## 计划内容
+## 当前交付
+
+- [`COMMUNITY_KIT.md`](./COMMUNITY_KIT.md)：页面、组件、变量与发布准则。
+- [`community-kit.manifest.json`](./community-kit.manifest.json)：可机读的首发
+  范围、成熟度和 Token 来源。
+
+## Kit 范围
 
 - Core Foundations
 - Variables / Tokens Mapping

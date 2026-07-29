@@ -1,0 +1,21 @@
+{
+  "name": "NeoGlass X Community Kit",
+  "maturity": "preview-blueprint",
+  "repository": "https://github.com/iuoow/neoGlassX",
+  "sourceOfTruth": {
+    "tokens": "../tokens",
+    "specifications": "../docs/zh-CN",
+    "referenceExample": "../examples/agent-run-workspace"
+  },
+  "pages": [
+    "Cover & Start",
+    "Foundations",
+    "Variables",
+    "Core Components",
+    "Agent Workbench",
+    "Accessibility",
+    "Patterns",
+    "Archive"
+  ],
+  "publishedComponentPolicy": "Preview components are not stable API contracts."
+}

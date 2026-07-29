@@ -40,7 +40,7 @@ This project is not affiliated with or endorsed by OpenClaw, Hermes Agent, or th
 
 ## Status
 
-The repository currently contains a Chinese documentation set and open-source project scaffolding. It does not yet ship a stable component library or a complete Figma kit.
+The repository now ships a Chinese documentation set, an English core, reproducible browser Token CSS, a static Agent Run reference, an accessibility fixture with structural checks, a static documentation entry page, and a Figma Community Kit blueprint. It does not yet ship a stable component library or a complete editable Figma file.
 
 Planned milestones:
 

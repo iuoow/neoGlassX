@@ -1,18 +1,25 @@
-# English documentation status
+# English documentation
 
-The full English documentation set has not been translated yet.
+The English core is available for evaluation, contribution, and the first
+reference implementation. The full specification set is still being
+translated; the Simplified Chinese documents remain the normative source where
+an English page has not yet been published.
 
-Current entry points:
+## Start here
 
-- [`README.en.md`](../../README.en.md)
-- [`ROADMAP.md`](../../ROADMAP.md)
-- [`CONTRIBUTING.md`](../../CONTRIBUTING.md)
-- Chinese source documents: [`../zh-CN`](../zh-CN/)
+- [Project overview](../../README.en.md)
+- [Architecture contract](./architecture.md)
+- [Agent Run Workspace reference](./agent-run-workspace.md)
+- [Accessibility baseline](./accessibility.md)
+- [Roadmap](../../ROADMAP.md)
+- [Contributing](../../CONTRIBUTING.md)
+- [Chinese specification index](../zh-CN/README.md)
 
-Translation principles:
+## Translation policy
 
-- Preserve MUST / SHOULD / MAY meaning.
-- Keep product-object names consistent.
+- Preserve the meaning of MUST, SHOULD, and MAY.
+- Keep product-object names such as Run, Tool Call, Approval, Evidence, and
+  Artifact consistent.
 - Do not translate third-party product names.
-- Verify technical and accessibility terminology.
-- Mark incomplete sections instead of silently omitting them.
+- Mark incomplete material instead of silently omitting it.
+- Link to the Chinese source when a detailed normative section is pending.
