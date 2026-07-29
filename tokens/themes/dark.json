@@ -1,0 +1,13 @@
+{
+  "theme": {
+    "dark": {
+      "$description": "Initial dark-theme mapping for the supported Agent Workbench preset.",
+      "color": {
+        "surface": { "$type": "color", "canvas": { "$value": "{color.surface.canvas}" }, "default": { "$value": "{color.surface.default}" }, "raised": { "$value": "{color.surface.raised}" }, "overlay": { "$value": "{color.surface.overlay}" } },
+        "border": { "$type": "color", "subtle": { "$value": "{color.border.subtle}" }, "strong": { "$value": "{color.border.strong}" } },
+        "text": { "$type": "color", "primary": { "$value": "{color.text.primary}" }, "secondary": { "$value": "{color.text.secondary}" }, "tertiary": { "$value": "{color.text.tertiary}" } },
+        "action": { "$type": "color", "primary": { "$value": "{color.action.primary}" }, "on-primary": { "$value": "{color.action.on-primary}" } }
+      }
+    }
+  }
+}

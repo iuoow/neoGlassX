@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use NeoGlass Experience System, please cite it using this metadata."
+title: "NeoGlass Experience System"
+type: software
+version: "0.2.0-alpha.1"
+date-released: "2026-07-29"
+license: Apache-2.0
+repository-code: "https://github.com/iuoow/neoGlassX"
+url: "https://github.com/iuoow/neoGlassX"
+abstract: >-
+  An open design system for trustworthy AI agents, enterprise software,
+  data platforms, operations, and immersive product experiences.
+authors:
+  - alias: "iuoow"
+    website: "https://github.com/iuoow"
+keywords:
+  - design system
+  - AI agent
+  - enterprise UI
+  - design tokens
+  - data visualization
+  - observability
+  - accessibility

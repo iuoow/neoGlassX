@@ -1,0 +1,43 @@
+name: Design proposal
+description: Propose a significant pattern, component, token, profile, or governance change.
+title: "[Proposal]: "
+labels: ["design-proposal", "needs-decision"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected users
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Why the current system is insufficient
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: impacts
+    attributes:
+      label: Accessibility, security, performance, and migration impact
+    validations:
+      required: true
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Breaking change?
+      options:
+        - No
+        - Possibly
+        - Yes
+    validations:
+      required: true

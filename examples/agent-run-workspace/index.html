@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark" data-density="compact" data-experience="solid" data-transparency="reduced">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NeoGlass X Agent Run Workspace reference page">
+    <title>Agent Run Workspace · NeoGlass X</title>
+    <link rel="stylesheet" href="../../tokens/build/neoglass.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <a class="brand" href="../../README.md" aria-label="NeoGlass X 项目首页">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span>NeoGlass <b>X</b></span>
+        </a>
+        <nav>
+          <p class="nav-label">AGENT WORKBENCH</p>
+          <a href="#run-overview" aria-current="page">Runs <span>12</span></a>
+          <a href="#plan">Plans</a>
+          <a href="#artifacts">Artifacts</a>
+          <a href="#approval">Approvals <span class="nav-alert">1</span></a>
+          <a href="#audit">Audit</a>
+        </nav>
+        <div class="sidebar-footer">
+          <span class="presence-dot" aria-hidden="true"></span>
+          Sandbox: isolated
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">RUN / RG-2026-0729-041</p>
+            <h1>完成客户续费风险简报</h1>
+          </div>
+          <div class="topbar-actions">
+            <label class="appearance-picker">主题
+              <select id="theme-select" aria-label="显示主题">
+                <option value="dark">暗色</option>
+                <option value="high-contrast">高对比</option>
+              </select>
+            </label>
+            <label class="appearance-picker">透明度
+              <select id="transparency-select" aria-label="透明度偏好">
+                <option value="reduced">减少</option>
+                <option value="none">关闭</option>
+              </select>
+            </label>
+            <label class="appearance-picker">动效
+              <select id="motion-select" aria-label="动效偏好">
+                <option value="productive">必要</option>
+                <option value="none">关闭</option>
+              </select>
+            </label>
+            <span class="environment">STAGING</span>
+            <button class="button button-secondary" type="button">暂停 Run</button>
+            <button class="button button-danger" type="button">取消 Run</button>
+          </div>
+        </header>
+
+        <section id="run-overview" class="run-summary" aria-labelledby="run-title">
+          <div>
+            <div class="status-row">
+              <span class="status status-running"><span aria-hidden="true"></span>等待审批</span>
+              <span class="risk risk-r3">R3 · 外发草稿</span>
+            </div>
+            <h2 id="run-title">Agent 已完成分析，正在请求发送审批</h2>
+            <p>基于 CRM、账单和使用数据生成了 18 位高风险客户的续费简报；发送前必须确认收件范围、附件和数据外发边界。</p>
+          </div>
+          <dl class="run-metadata">
+            <div><dt>执行者</dt><dd>Revenue Analyst Agent</dd></div>
+            <div><dt>已用时间</dt><dd>06:42</dd></div>
+            <div><dt>模型成本</dt><dd>$0.84</dd></div>
+            <div><dt>副作用</dt><dd>尚未发生</dd></div>
+          </dl>
+        </section>
+
+        <div class="workspace-grid">
+          <section id="plan" class="panel timeline-panel" aria-labelledby="timeline-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">EXECUTION TIMELINE</p>
+                <h2 id="timeline-title">执行过程与证据</h2>
+              </div>
+              <button class="text-button" type="button">筛选记录</button>
+            </div>
+
+            <ol class="timeline">
+              <li class="timeline-item complete">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <div class="item-meta"><time datetime="2026-07-29T15:02:11+08:00">15:02:11</time><span>Plan</span></div>
+                  <h3>已建立三步分析计划</h3>
+                  <p>识别客户范围 → 汇总风险信号 → 生成并审核简报。</p>
+                </div>
+              </li>
+              <li class="timeline-item complete">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <div class="item-meta"><time datetime="2026-07-29T15:02:35+08:00">15:02:35</time><span>Tool call</span><span class="risk risk-r0">R0</span></div>
+                  <details class="tool-call">
+                    <summary><span><b>crm.query</b><small>读取近 90 天续费机会和健康度</small></span><span class="result success">成功 · 1.2s</span></summary>
+                    <div class="tool-details">
+                      <dl><div><dt>权限</dt><dd>CRM / read:renewals</dd></div><div><dt>数据范围</dt><dd>18 条账户记录</dd></div><div><dt>脱敏</dt><dd>联系人邮箱已遮蔽</dd></div></dl>
+                      <pre><code>SELECT account_id, health_score, renewal_date
+FROM renewals WHERE renewal_date &lt; 90 days</code></pre>
+                    </div>
+                  </details>
+                </div>
+              </li>
+              <li class="timeline-item complete">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <div class="item-meta"><time datetime="2026-07-29T15:03:49+08:00">15:03:49</time><span>Analysis</span></div>
+                  <h3>检测到 18 个需人工复核的续费风险账户</h3>
+                  <p>主要信号为活跃度下降、未解决支持工单和续约窗口临近。</p>
+                </div>
+              </li>
+              <li class="timeline-item waiting">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <div class="item-meta"><time datetime="2026-07-29T15:08:53+08:00">15:08:53</time><span>Approval required</span><span class="risk risk-r3">R3</span></div>
+                  <h3>等待批准发送续费风险简报</h3>
+                  <p>该动作将向 3 位内部收件人发送摘要和 CSV 附件；尚未执行。</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <aside class="right-column">
+            <section id="approval" class="panel approval-panel" aria-labelledby="approval-title">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">HUMAN APPROVAL</p>
+                  <h2 id="approval-title">发送内部风险简报</h2>
+                </div>
+                <span class="risk risk-r3">R3</span>
+              </div>
+              <dl class="approval-facts">
+                <div><dt>工具</dt><dd>mail.send</dd></div>
+                <div><dt>目标</dt><dd>revops@company.example 等 3 人</dd></div>
+                <div><dt>影响范围</dt><dd>18 个账户摘要 + CSV</dd></div>
+                <div><dt>可撤销性</dt><dd>发送后不可撤销</dd></div>
+                <div><dt>审批有效期</dt><dd>至 16:08:53</dd></div>
+              </dl>
+              <p class="approval-note">审批只允许本次操作；不会授予后续发送权限。附件中的个人联系方式将保持遮蔽。</p>
+              <div class="approval-actions">
+                <button class="button button-secondary" type="button" data-open-dialog="approval-dialog">查看并审批</button>
+                <button class="button button-ghost" type="button" data-set-approval="rejected">拒绝并要求修改</button>
+              </div>
+              <p id="approval-feedback" class="action-feedback" role="status" aria-live="polite"></p>
+            </section>
+
+            <section class="panel trust-panel" aria-labelledby="trust-title">
+              <p class="eyebrow">TRUST BOUNDARY</p>
+              <h2 id="trust-title">当前权限与保护</h2>
+              <ul>
+                <li><span class="check" aria-hidden="true">✓</span> CRM 数据仅读取，最小范围查询</li>
+                <li><span class="check" aria-hidden="true">✓</span> Secret 与联系人信息不会写入 Timeline</li>
+                <li><span class="check" aria-hidden="true">✓</span> 外发前要求明确人工批准</li>
+                <li><span class="check" aria-hidden="true">✓</span> 每项副作用可回溯到本次 Run</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+
+        <section id="artifacts" class="panel artifacts-panel" aria-labelledby="artifacts-title">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">ARTIFACT WORKSPACE</p>
+              <h2 id="artifacts-title">产物与变更</h2>
+            </div>
+            <span class="artifact-count">2 个待审核</span>
+          </div>
+          <div class="artifact-grid">
+            <article class="artifact-card">
+              <span class="file-type">MD</span>
+              <div><h3>renewal-risk-brief.md</h3><p>客户风险概览、优先级和建议下一步。</p></div>
+              <span class="result success">已生成</span>
+              <button class="text-button" type="button">预览</button>
+            </article>
+            <article class="artifact-card">
+              <span class="file-type">CSV</span>
+              <div><h3>renewal-risk-accounts.csv</h3><p>18 条已脱敏账户记录，含风险评分与证据链接。</p></div>
+              <span class="result warning">待审核</span>
+              <button class="text-button" type="button">查看字段</button>
+            </article>
+          </div>
+        </section>
+
+        <section id="audit" class="audit-note" aria-label="审计说明">
+          <span aria-hidden="true">⌁</span>
+          <p>此页面是静态参考实现：按钮不会发送邮件或访问外部系统。生产环境需要将审批、权限、审计和副作用记录接入实际服务端策略。</p>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="approval-dialog" aria-labelledby="dialog-title">
+      <form method="dialog">
+        <p class="eyebrow">R3 ACTION REVIEW</p>
+        <h2 id="dialog-title">确认发送内部风险简报</h2>
+        <p>你将允许 <code>mail.send</code> 将 18 个账户的脱敏摘要和 CSV 附件发送给 3 位内部收件人。该操作不可撤销。</p>
+        <label class="confirm-check"><input type="checkbox" id="approval-confirm"> 我已检查收件范围、附件与数据外发边界</label>
+        <div class="dialog-actions">
+          <button class="button button-ghost" value="cancel">取消</button>
+          <button class="button button-primary" id="approve-once" value="approve" disabled>仅批准本次</button>
+        </div>
+      </form>
+    </dialog>
+    <script src="./app.js"></script>
+  </body>
+</html>

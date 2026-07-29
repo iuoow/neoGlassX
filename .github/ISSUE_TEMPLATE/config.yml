@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and design discussions
+    url: https://github.com/iuoow/neoGlassX/discussions
+    about: Use Discussions for usage questions, early ideas, and community examples.
+  - name: Security vulnerability
+    url: https://github.com/iuoow/neoGlassX/security/advisories/new
+    about: Report vulnerabilities privately. Do not create a public issue.

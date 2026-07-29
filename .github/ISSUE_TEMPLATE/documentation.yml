@@ -1,0 +1,25 @@
+name: Documentation improvement
+description: Suggest a correction, clarification, translation, or missing topic.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Document or section
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear, incorrect, or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording or structure
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source, when relevant

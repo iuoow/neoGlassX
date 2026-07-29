@@ -1,0 +1,19 @@
+{
+  "theme": {
+    "high-contrast": {
+      "$description": "High-contrast override for critical text, surfaces, borders, and actions. It disables decorative transparency in the build output.",
+      "color": {
+        "surface": {
+          "$type": "color",
+          "canvas": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "hex": "#000000" } },
+          "default": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "hex": "#000000" } },
+          "raised": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "hex": "#000000" } },
+          "overlay": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "hex": "#000000" } }
+        },
+        "border": { "$type": "color", "subtle": { "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#FFFFFF" } }, "strong": { "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#FFFFFF" } } },
+        "text": { "$type": "color", "primary": { "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#FFFFFF" } }, "secondary": { "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "hex": "#FFFFFF" } }, "tertiary": { "$value": { "colorSpace": "srgb", "components": [0.9, 0.9, 0.9], "hex": "#E6E6E6" } } },
+        "action": { "$type": "color", "primary": { "$value": { "colorSpace": "srgb", "components": [0.52, 1, 0.68], "hex": "#85FFAD" } }, "on-primary": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "hex": "#000000" } } }
+      }
+    }
+  }
+}

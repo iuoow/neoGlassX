@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a reproducible problem in documentation, tokens, tooling, or examples.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, customer data, or unpatched security vulnerabilities.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Core design system
+        - Agent Workbench
+        - Enterprise
+        - Finance and Data
+        - Operations
+        - Marketing and Launch
+        - Tokens
+        - Documentation
+        - Governance
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and where?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction or evidence
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked for an existing issue.
+          required: true
+        - label: This report does not disclose a security vulnerability.
+          required: true

@@ -1,0 +1,28 @@
+name: Accessibility issue
+description: Report an accessibility barrier or propose an accessibility improvement.
+title: "[A11y]: "
+labels: ["a11y"]
+body:
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Barrier
+      description: Describe the user task that is blocked or difficult.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Component, document, browser, assistive technology, zoom, or theme.
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Suggested improvement
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed personal and sensitive information.
+          required: true

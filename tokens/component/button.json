@@ -1,0 +1,14 @@
+{
+  "button": {
+    "primary": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.action.primary}"
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": { "value": 36, "unit": "px" }
+      }
+    }
+  }
+}

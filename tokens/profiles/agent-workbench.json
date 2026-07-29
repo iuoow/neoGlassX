@@ -1,0 +1,15 @@
+{
+  "profile": {
+    "agent-workbench": {
+      "$description": "Initial supported profile: dark, compact, solid surfaces with limited subtle glass.",
+      "experience": {
+        "$type": "string",
+        "$value": "solid"
+      },
+      "density": {
+        "$type": "string",
+        "$value": "compact"
+      }
+    }
+  }
+}
