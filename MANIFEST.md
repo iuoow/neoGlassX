@@ -57,7 +57,7 @@
 | `examples/agent-run-workspace/app.js` | 4891 | `64c71fefb114d59610dcdefb0bc1c1b48ab305fc50539de473cc976649b758eb` |
 | `examples/agent-run-workspace/index.html` | 12689 | `aaef593cb035507004d65947661dbd642563f3cb4d50b51e4de2325e043c563f` |
 | `examples/agent-run-workspace/README.md` | 1125 | `1238d11f8a4d8a264dd72da4faacfdb88e90bc1aa423f7ab69bea0ac175aec6d` |
-| `examples/agent-run-workspace/styles.css` | 15517 | `8b31eca5357e2bfc1e74219726fa9bd73d1ca9ad54fca8ac06762c65eae32114` |
+| `examples/agent-run-workspace/styles.css` | 15617 | `f99ac65ece0e089246559684c9eb4de9a1e8957a47d2eaef49666478e84f0e81` |
 | `examples/README.md` | 674 | `d129dc40c0d26d723355d6e979da4481f9265ce509206f8cb8327865df3e1792` |
 | `figma/COMMUNITY_KIT.md` | 2777 | `42a3254a4fc28e9f9056e0d7b2ad8c3c28a661aefaba515c6749191adbe06368` |
 | `figma/community-kit.manifest.json` | 534 | `6e33820ca27447dce1fe06f7c7154190a872d7260c69e5da2cac08ee20f1a3c0` |
@@ -82,9 +82,9 @@
 | `scripts/Update-Manifest.ps1` | 1266 | `cc630ad7c97d91776d52a94b5d081969fc4fc864749e9bf715e155f083e7ba0b` |
 | `SECURITY.md` | 2269 | `a58504141b91c28940c7815ef6571fe20cd54168c291f5ff75d4cfd67e9624b5` |
 | `SUPPORT.md` | 872 | `43e435d141224c11ffbc5a0a10efbf795418f55a45be4f91db656848d5e0cd95` |
-| `tokens/build/neoglass.css` | 4039 | `3591504e842c811c66093d3fdd07ab1fd5661e73a935ea210ce71f47e6fc64f5` |
+| `tokens/build/neoglass.css` | 4386 | `63dd43290585add36f608b011395727acd1ed4e6da387d73d4ba14631695b98e` |
 | `tokens/build/README.md` | 474 | `e8b6a60f35eeb7ef0b7cb450e44588bc81a808aba90a4b4a88d4c7440f5132f8` |
-| `tokens/component/button.json` | 249 | `1bfe148b9f73c74a4cd74535da971e090efb3e191a6d67e61e01f1f6d9712b45` |
+| `tokens/component/button.json` | 806 | `1b720edf0d7b1745010ab2b95578a2b482ffd3188bf321ed7a3a70d144b2c19b` |
 | `tokens/neoglass.example.tokens.json` | 2445 | `0e7907489d1c517fe5bcdeb4eed901aa4785e9603993b8ccc9cc3da0eb6c2b69` |
 | `tokens/primitive/color.json` | 1957 | `1cbc04c13cdaef9b9cb56e9db6e24ceaa4333d9d309aadc01e639155d7a1c606` |
 | `tokens/primitive/elevation.json` | 105 | `575b732dd73e89fcca07035d300bb22bb52ff40f4894b807af72ced96abb3f84` |

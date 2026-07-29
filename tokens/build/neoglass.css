@@ -2,8 +2,15 @@
 /* Experimental output for NeoGlass X. */
 
 :root, [data-theme="dark"] {
+  --ng-button-common-focus-ring: rgb(0 217 104);
+  --ng-button-common-height: 36px;
+  --ng-button-danger-background: rgb(255 98 98);
+  --ng-button-danger-foreground: rgb(5 7 6);
   --ng-button-primary-background: rgb(0 217 104);
-  --ng-button-primary-height: 36px;
+  --ng-button-primary-foreground: rgb(5 7 6);
+  --ng-button-secondary-background: rgb(18 23 20);
+  --ng-button-secondary-border: rgb(69 96 82);
+  --ng-button-secondary-foreground: rgb(243 248 244);
   --ng-color-action-danger: rgb(255 98 98);
   --ng-color-action-on-danger: rgb(5 7 6);
   --ng-color-action-on-primary: rgb(5 7 6);

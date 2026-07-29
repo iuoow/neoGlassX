@@ -14,7 +14,7 @@ body {
 button, input { font: inherit; }
 button { cursor: pointer; }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--ng-color-action-primary); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--ng-button-common-focus-ring); outline-offset: 3px; }
 
 .skip-link { position: fixed; top: -48px; left: var(--ng-space-4); z-index: 10; padding: var(--ng-space-2) var(--ng-space-3); border-radius: var(--ng-radius-sm); background: var(--ng-color-action-primary); color: var(--ng-color-action-on-primary); font-weight: 700; }
 .skip-link:focus { top: var(--ng-space-3); }
@@ -41,12 +41,12 @@ h2 { margin-bottom: var(--ng-space-2); font-size: 17px; line-height: 1.3; }
 h3 { margin-bottom: var(--ng-space-1); font-size: 14px; }
 .topbar-actions, .status-row, .approval-actions, .dialog-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--ng-space-2); }
 .appearance-picker { display: grid; gap: 2px; color: var(--ng-color-text-tertiary); font-size: 10px; font-weight: 700; }.appearance-picker select { min-height: 28px; padding: 0 24px 0 6px; border: 1px solid var(--ng-color-border-subtle); border-radius: 6px; background: var(--ng-color-surface-raised); color: var(--ng-color-text-primary); }.environment { padding: 4px 7px; border: 1px solid var(--ng-color-border-strong); border-radius: 999px; background: var(--ng-color-surface-raised); color: var(--ng-color-status-warning); font-family: var(--ng-font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; }
-.button { min-height: var(--ng-control-height); padding: 0 var(--ng-space-3); border: 1px solid var(--ng-color-border-strong); border-radius: var(--ng-radius-sm); background: var(--ng-color-surface-raised); color: var(--ng-color-text-primary); font-weight: 650; transition: background var(--ng-motion-duration-fast) var(--ng-motion-ease-standard), border-color var(--ng-motion-duration-fast) var(--ng-motion-ease-standard); }
-.button:hover { border-color: var(--ng-color-border-strong); background: var(--ng-color-surface-raised); }
-.button-primary { border-color: var(--ng-color-action-primary); background: var(--ng-color-action-primary); color: var(--ng-color-action-on-primary); }
-.button-primary:hover { background: var(--ng-color-action-primary); filter: brightness(1.1); }
-.button-danger { border-color: var(--ng-color-action-danger); background: var(--ng-color-action-danger); color: var(--ng-color-action-on-danger); }
-.button-danger:hover { background: var(--ng-color-action-danger); filter: brightness(1.1); }
+.button { min-height: var(--ng-button-common-height); padding: 0 var(--ng-space-3); border: 1px solid var(--ng-button-secondary-border); border-radius: var(--ng-radius-sm); background: var(--ng-button-secondary-background); color: var(--ng-button-secondary-foreground); font-weight: 650; transition: background var(--ng-motion-duration-fast) var(--ng-motion-ease-standard), border-color var(--ng-motion-duration-fast) var(--ng-motion-ease-standard); }
+.button:hover { border-color: var(--ng-button-secondary-border); background: var(--ng-button-secondary-background); filter: brightness(1.1); }
+.button-primary { border-color: var(--ng-button-primary-background); background: var(--ng-button-primary-background); color: var(--ng-button-primary-foreground); }
+.button-primary:hover { background: var(--ng-button-primary-background); filter: brightness(1.1); }
+.button-danger { border-color: var(--ng-button-danger-background); background: var(--ng-button-danger-background); color: var(--ng-button-danger-foreground); }
+.button-danger:hover { background: var(--ng-button-danger-background); filter: brightness(1.1); }
 .button-ghost { border-color: transparent; background: transparent; color: var(--ng-color-text-secondary); }
 .button-ghost:hover { border-color: var(--ng-color-border-subtle); background: var(--ng-color-surface-raised); }
 .text-button { padding: var(--ng-space-1) 0; border: 0; background: transparent; color: var(--ng-color-action-primary); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }

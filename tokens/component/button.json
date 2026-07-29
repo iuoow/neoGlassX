@@ -1,14 +1,21 @@
 {
   "button": {
+    "common": {
+      "height": { "$type": "dimension", "$value": "{control.height}" },
+      "focus-ring": { "$type": "color", "$value": "{color.action.primary}" }
+    },
+    "secondary": {
+      "background": { "$type": "color", "$value": "{color.surface.raised}" },
+      "border": { "$type": "color", "$value": "{color.border.strong}" },
+      "foreground": { "$type": "color", "$value": "{color.text.primary}" }
+    },
     "primary": {
-      "background": {
-        "$type": "color",
-        "$value": "{color.action.primary}"
-      },
-      "height": {
-        "$type": "dimension",
-        "$value": { "value": 36, "unit": "px" }
-      }
+      "background": { "$type": "color", "$value": "{color.action.primary}" },
+      "foreground": { "$type": "color", "$value": "{color.action.on-primary}" }
+    },
+    "danger": {
+      "background": { "$type": "color", "$value": "{color.action.danger}" },
+      "foreground": { "$type": "color", "$value": "{color.action.on-danger}" }
     }
   }
 }
