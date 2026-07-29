@@ -56,15 +56,15 @@
               </select>
             </label>
             <span class="environment">STAGING</span>
-            <button class="button button-secondary" type="button">暂停 Run</button>
-            <button class="button button-danger" type="button">取消 Run</button>
+            <button class="button button-secondary" id="pause-run" type="button">暂停 Run</button>
+            <button class="button button-danger" id="cancel-run" type="button">取消 Run</button>
           </div>
         </header>
 
         <section id="run-overview" class="run-summary" aria-labelledby="run-title">
           <div>
             <div class="status-row">
-              <span class="status status-running"><span aria-hidden="true"></span>等待审批</span>
+              <span class="status status-running" id="run-status"><span aria-hidden="true"></span>等待审批</span>
               <span class="risk risk-r3">R3 · 外发草稿</span>
             </div>
             <h2 id="run-title">Agent 已完成分析，正在请求发送审批</h2>
@@ -85,10 +85,10 @@
                 <p class="eyebrow">EXECUTION TIMELINE</p>
                 <h2 id="timeline-title">执行过程与证据</h2>
               </div>
-              <button class="text-button" type="button">筛选记录</button>
+            <button class="text-button" id="timeline-filter" type="button" aria-pressed="false">仅看待处理</button>
             </div>
 
-            <ol class="timeline">
+            <ol class="timeline" id="timeline-list">
               <li class="timeline-item complete">
                 <div class="timeline-marker" aria-hidden="true"></div>
                 <div>
@@ -180,13 +180,13 @@ FROM renewals WHERE renewal_date &lt; 90 days</code></pre>
               <span class="file-type">MD</span>
               <div><h3>renewal-risk-brief.md</h3><p>客户风险概览、优先级和建议下一步。</p></div>
               <span class="result success">已生成</span>
-              <button class="text-button" type="button">预览</button>
+              <button class="text-button" type="button" data-artifact="brief">预览</button>
             </article>
             <article class="artifact-card">
               <span class="file-type">CSV</span>
               <div><h3>renewal-risk-accounts.csv</h3><p>18 条已脱敏账户记录，含风险评分与证据链接。</p></div>
               <span class="result warning">待审核</span>
-              <button class="text-button" type="button">查看字段</button>
+              <button class="text-button" type="button" data-artifact="csv">查看字段</button>
             </article>
           </div>
         </section>
@@ -195,6 +195,7 @@ FROM renewals WHERE renewal_date &lt; 90 days</code></pre>
           <span aria-hidden="true">⌁</span>
           <p>此页面是静态参考实现：按钮不会发送邮件或访问外部系统。生产环境需要将审批、权限、审计和副作用记录接入实际服务端策略。</p>
         </section>
+        <p id="run-feedback" class="run-feedback" role="status" aria-live="polite"></p>
       </main>
     </div>
 
@@ -208,6 +209,26 @@ FROM renewals WHERE renewal_date &lt; 90 days</code></pre>
           <button class="button button-ghost" value="cancel">取消</button>
           <button class="button button-primary" id="approve-once" value="approve" disabled>仅批准本次</button>
         </div>
+      </form>
+    </dialog>
+    <dialog id="cancel-dialog" aria-labelledby="cancel-dialog-title">
+      <form method="dialog">
+        <p class="eyebrow">RUN CONTROL / EXAMPLE ONLY</p>
+        <h2 id="cancel-dialog-title">确认取消当前 Run</h2>
+        <p>该参考页只更新本地显示状态，不会停止服务端任务。生产环境应展示可取消范围、已发生副作用和审计记录。</p>
+        <label class="confirm-check"><input type="checkbox" id="cancel-confirm"> 我已确认这是一次不可逆的示例状态变更</label>
+        <div class="dialog-actions">
+          <button class="button button-ghost" value="cancel">返回</button>
+          <button class="button button-danger" id="cancel-once" value="cancel-run" disabled>取消示例 Run</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="artifact-dialog" aria-labelledby="artifact-dialog-title">
+      <form method="dialog">
+        <p class="eyebrow">ARTIFACT PREVIEW</p>
+        <h2 id="artifact-dialog-title">产物预览</h2>
+        <p id="artifact-dialog-content"></p>
+        <div class="dialog-actions"><button class="button button-secondary" value="close">关闭</button></div>
       </form>
     </dialog>
     <script src="./app.js"></script>

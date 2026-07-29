@@ -49,10 +49,10 @@
 | `docs/zh-CN/17_公开预览交付范围.md` | 2787 | `42b05f9022b69a216274705f20971b348cb6288ad1e2b88510752f931853e5cc` |
 | `docs/zh-CN/MANIFEST.txt` | 601 | `40dca7e87b440cc21f780f62009496b4dde5ff53c4c07293ce3cf3e9156a1c9d` |
 | `docs/zh-CN/README.md` | 5832 | `0b05c7fabd74804d9474eaa27bea754269c0629625605124f6c3cfa7c89f20af` |
-| `examples/agent-run-workspace/app.js` | 1642 | `c0c556960fc8453a3c1a5051179a2cfdf2b24f6f41e1dadd2abc448eede4b3c6` |
-| `examples/agent-run-workspace/index.html` | 11253 | `bcf2db53169429f49b530d6642ca86f42772ec7af9e326b6a7a5d95c9f29e850` |
+| `examples/agent-run-workspace/app.js` | 4891 | `64c71fefb114d59610dcdefb0bc1c1b48ab305fc50539de473cc976649b758eb` |
+| `examples/agent-run-workspace/index.html` | 12689 | `aaef593cb035507004d65947661dbd642563f3cb4d50b51e4de2325e043c563f` |
 | `examples/agent-run-workspace/README.md` | 1125 | `1238d11f8a4d8a264dd72da4faacfdb88e90bc1aa423f7ab69bea0ac175aec6d` |
-| `examples/agent-run-workspace/styles.css` | 14109 | `633bc0040c949596dd2abfcec1bcfd807c9b0efe8fe37f91943a18becf9eb21d` |
+| `examples/agent-run-workspace/styles.css` | 14459 | `1ef30ce78fe1de2f6546d46b197466927cb4cd837280df85c5f499b7530ec588` |
 | `examples/README.md` | 546 | `8f92f470697ecd3593a3a2318383ffcf75b1c534e66b472840cd7ed13e0cb99d` |
 | `figma/README.md` | 614 | `4d62c09e566ee5edb8c66c5e593180440f981735efc06c81c1e155a347935222` |
 | `GOVERNANCE.md` | 3101 | `af7e12094e6772936f116bf13911093cb13e90fc04ca395d1e86cca9304fd199` |
