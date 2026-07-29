@@ -16,7 +16,7 @@
 | `.github/ISSUE_TEMPLATE/documentation.yml` | 614 | `466fbe27995e0e83d15616c71a600e72c310c399d419182b6bee645884e78617` |
 | `.github/pull_request_template.md` | 900 | `2c18f4de7c67f2634e186edc4329e7d2d338f0279529405b8bf4d0515df53d24` |
 | `.github/workflows/quality.yml` | 336 | `a490278278a7c3db20f00cab93d1d3db72f1c6ccd961eb3cc63a9913db8aaa41` |
-| `.gitignore` | 111 | `ea0a8d88a11e43e4d57aaf12e5f1207e304a05885516c532439d43ba5665327a` |
+| `.gitignore` | 222 | `8b873b85116ba01b055d86318b0f1dc664eaf8b9c866738c802e47ebba774026` |
 | `ARCHITECTURE.md` | 3199 | `24ae5fb11f0a754b80cd6c11a0ddca549935058d433e4e5b2fbbcc981a6d8cd6` |
 | `assets/README.md` | 356 | `54beadc7a26480b4a11d1eeec702a97c63f2e754d9faafb34c44de417c920ee2` |
 | `CHANGELOG.md` | 825 | `0cb228711d75f776e1f0acf2ecdc6624142a3c612cfbb10e09ad7ced2d11b847` |

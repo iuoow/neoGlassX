@@ -5,6 +5,9 @@ Thumbs.db
 node_modules/
 dist/
 build/
+# The reference example imports the reproducibly generated Token CSS directly.
+!tokens/build/
+!tokens/build/**
 coverage/
 .env
 .env.*
